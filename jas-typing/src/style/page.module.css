@@ -1,0 +1,13 @@
+.main {
+    color: orange;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.main p {
+    color: blue;
+}
+.main #myId {
+    background-color: yellow;
+  }
+
