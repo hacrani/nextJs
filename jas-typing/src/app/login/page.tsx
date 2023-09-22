@@ -7,7 +7,7 @@ export default function Login() {
             <p>hdfalfnd jfklda </p>
 
             <p className={styles.myClass}>This is a red text</p>
-            <p id='myId'>hfdladks fdfl</p>
+            <p id={styles.myId}>hfdladks fdfl</p>
         </div>
     );
 }

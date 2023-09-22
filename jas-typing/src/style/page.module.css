@@ -7,7 +7,7 @@
 .main p {
     color: blue;
 }
-.main #myId {
+#myId {
     background-color: yellow;
   }
 
