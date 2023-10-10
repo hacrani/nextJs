@@ -15,7 +15,7 @@ export default function NotFound() {
       />
       <style jsx>{`
           h2 {
-            background-color : red
+            background-color : #ffffff;
             ;
           }
       `}
