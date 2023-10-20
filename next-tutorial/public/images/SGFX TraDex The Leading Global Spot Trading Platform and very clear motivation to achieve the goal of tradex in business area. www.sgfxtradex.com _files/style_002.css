@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="assets/dist/images/fevicon.png" type="image/gif" sizes="48x48">
+  <title>SGFX Tradex | Adminitrator Dashboard</title>
+  <base href="https://sgfxtradex.com/" csrf="">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#28a745" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bbootstrap 4 -->
+  <link rel="stylesheet" href="assets/plugins/toastr/toastr.min.css">
+  <!-- custom css -->
+   <link rel="stylesheet" href="assets/dist/css/custom.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="assets/dist/css/adminlte.min.css?v=1696952589">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="assets/plugins/datatables-bs4/css/dataTables.bootstrap4.css">  
+  <!-- jQuery -->
+  <script src="assets/plugins/jquery/jquery.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+  <script src="assets/plugins/toastr/toastr.min.js"></script>
+  <script src="assets/dist/js/adminlte.js"></script>
+  <script src="assets/plugins/datatables/jquery.dataTables.js"></script>
+  <script src="assets/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+  <script src="assets/plugins/jquery-validation/jquery.validate.min.js"></script>
+  <script src="assets/plugins/jquery-validation/additional-methods.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js"></script>
+
+ <script type="text/javascript">
+    var link = "stylecss", link_child = "index";
+    $(function() {
+      $('#data_table_id').DataTable({
+        "paging": true,
+        "lengthChange": true,
+        "searching": true,
+        "ordering": false,
+        "info": true,
+        "autoWidth": false
+      });
+    });
+  </script>
+ 
+ <script src="assets/dist/js/boostmoney.js?v=1.7"></script>
+  
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // alert();
+    var isshow = localStorage.getItem('isshow');
+    if (isshow === null) {
+        localStorage.setItem('isshow', 1);
+        // Show popup here
+        $('#myModalloder').modal('show');
+        $("#myModalloder").css({"opacity": "1", "display": "block"});
+         $("#myModalloder .modal-dialog").css({"top": "20%"});
+    } else {
+      // alert('else part');
+      // console.log(isshow);
+    }
+    setInterval(function(){ localStorage.removeItem("isshow") }, 300000);
+});
+</script>
+
+
+<style>
+ 
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined property: CI_Loader::$access_level</p>
+<p>Filename: includes/header.php</p>
+<p>Line Number: 82</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/sgfxtradex/public_html/application/views/internal/includes/header.php<br />
+			Line: 82<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/sgfxtradex/public_html/application/views/errors/html/page_404.php<br />
+			Line: 1<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/sgfxtradex/public_html/application/controllers/Home.php<br />
+			Line: 476<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/sgfxtradex/public_html/index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>    div.export_excel{
+        display: none;
+    }
+
+</style>
+
+
+
+
+<!-- <script src='https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js'></script> -->
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.js'></script> -->
+<!-- <link rel="stylesheet" type="text/css" href="assets/dist/css/wizard-form.css"> -->
+
+</head>
+
+<div class="">
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="internal/dashboard">Home</a></li>
+            <li class="breadcrumb-item active">404 Error Page</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>    
+  <section class="content">
+    <div class="error-page">
+      <h2 class="headline text-warning"> 404</h2>
+      <div class="error-content">
+        <h3><i class="fas fa-exclamation-triangle text-warning"></i> Oops! Page not found.</h3>
+        <p>
+          We could not find the page you were looking for.
+          Meanwhile, you may <a href="internal/dashboard">return to dashboard</a> or try using the search form.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
