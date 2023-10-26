@@ -18,55 +18,13 @@ function MyForm() {
       const handleInputChange = (e) => {
         const { name, defaultValue } = e.target;
         setFormData({ ...formData, [name]: defaultValue });
-        
-        // Clear the error for the field when the user makes a correction
         setErrors({ ...errors, [name]: '' });
       };
     
       const handleSubmit = (e) => {
         e.preventDefault();
-    
-        // Perform custom validation
-        const newErrors = {};
-    
-        if (!formData.firstname) {
-          newErrors.firstname = 'Firstname is required';
-        }
 
-        if (!formData.motherName) {
-            newErrors.motherName = 'Mother\'s is required';
-        }
-        if (!formData.fatherName) {
-            newErrors.fatherName = 'Father\'s is required';
-        }
-    
-        if (!formData.email) {
-          newErrors.email = 'Email is required';
-        } else if (!/^\S+@\S+$/.test(formData.email)) {
-          newErrors.email = 'Invalid email format';
-        }
-
-        if (!formData.mobile) {
-            newErrors.mobile = 'Mother\'s is required';
-        }
-        
-        if (!formData.pincode) {
-            newErrors.pincode = 'Mother\'s is required';
-        }
-        if (!formData.dob) {
-            newErrors.dob = 'Mother\'s is required';
-        }
-        if (!formData.course) {
-            newErrors.course = 'Mother\'s is required';
-        }
-    
-        if (Object.keys(newErrors).length === 0) {
-          // Form is valid, submit the data or perform further actions
-          console.log('Form is valid:', formData);
-        } else {
-          // Form is invalid, update the errors state
-          setErrors(newErrors);
-        }
+        console.log(formData);
       };
 
   return (
@@ -173,7 +131,7 @@ function MyForm() {
         <div className="form-outline mb-4">
         <label className="form-label" htmlFor="form3Example9">DOB</label>
         <input 
-            type="email" 
+            type="text" 
             className="form-control form-control-md"
             defaultValue={formData.dob}
             onChange={handleInputChange}
@@ -184,7 +142,7 @@ function MyForm() {
         <div className="form-outline mb-4">
         <label className="form-label" htmlFor="form3Example90">Pincode</label>
         <input 
-            type="email" 
+            type="text" 
             className="form-control form-control-md"
             defaultValue={formData.pincode}
             onChange={handleInputChange}
@@ -205,7 +163,7 @@ function MyForm() {
         <div className="form-outline mb-4">
         <label className="form-label">Mobile No. </label>
         <input 
-            type="email" 
+            type="text" 
             className="form-control form-control-md"
             defaultValue={formData.mobile}
             onChange={handleInputChange}
@@ -216,7 +174,7 @@ function MyForm() {
         <div className="form-outline mb-4">
         <label className="form-label" htmlFor="form3Example99">Course</label>
         <input 
-            type="email" 
+            type="text" 
             className="form-control form-control-md"
             defaultValue={formData.course}
             onChange={handleInputChange}
