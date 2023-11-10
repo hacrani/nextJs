@@ -8,3 +8,16 @@ body {
  margin: 0;
  padding: 0;
 }
+
+
+/* Add this CSS to change font text color on hover and active */
+.navbar-nav li.nav-item:hover a.nav-link,
+.navbar-nav li.nav-item.active a.nav-link {
+    color: red;
+}
+
+/* Optional: To change the color of the dropdown items on hover */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa; /* Change the background color on hover */
+    color:red;
+}

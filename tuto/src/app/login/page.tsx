@@ -26,6 +26,8 @@ const Login = () => {
                             <button type="button" className="btn btn-light btn-md" >Reset all</button>
                             <button type="submit" className="btn btn-warning btn-md ms-2">login</button>
                         </div>
+                        <p className="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="/register"
+                className="link-danger">Register</a></p>
                     </div>
                     </div>
                 </div>
