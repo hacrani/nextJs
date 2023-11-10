@@ -1,0 +1,10 @@
+body {
+  background-image: url('https://images.pexels.com/photos/593319/pexels-photo-593319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+ background-size: cover;  /* Adjust this according to your needs */
+ background-position: center;  /* Adjust this according to your needs */
+ background-repeat: no-repeat;
+}
+* {
+ margin: 0;
+ padding: 0;
+}
